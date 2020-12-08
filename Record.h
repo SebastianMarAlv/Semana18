@@ -1,8 +1,9 @@
-//
+// Definition of class Record
 // Sebastian Marquez Alvarez A01632483.
-// Aldo Alejandro Degollado Padilla A01638391
-// Daniel Cordova Verdugo A01630123
-// 29/11/2020.
+//
+//
+//
+// 08/12/2020.
 
 
 #ifndef ACT5_2_RECORD_H
@@ -19,25 +20,20 @@ using namespace std;
 
 struct Record {
     //Atributes:
-    std::string month;
-    std::string day;
-    std::string hour;
-    int numberMonth;
-    int numberDay;
-    int hours;
-    int minutes;
-    int seconds;
+    std::string id;
+    int year;
+    std::string brand;
+    std::string collection;
+    std::string character;
+    std::string media;
+    int price;
 
     //Constructor:
-    Record(std::string info, string& ip);
-
-    //Member functions:
-    std::string info() const;
+    explicit Record(const std::string& info);
 
 };
 
 // Operator overloads:
-bool operator<(const Record& first, const Record& second);
 ostream& operator<<(std::ostream& os, const Record& obj);
 
 #endif //ACT5_2_RECORD_H

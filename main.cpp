@@ -1,21 +1,22 @@
 //
 // Sebastian Marquez Alvarez A01632483.
-// Aldo Alejandro Degollado Padilla A01638391
-// Daniel Cordova Verdugo A01630123
-// 29/11/2020.
+//
+//
+//
+// 08/12/2020.
 
-#include "MyHashTable.h"
+#include "Record.h"
+#include <algorithm>
 
 void loadFile(MyHashTable& records);
 
 int main() {
-    MyHashTable records;
+    vector<Record> records;
     loadFile(records);
-    records.getAndPrint();
     return 0;
 }
 
-void loadFile(MyHashTable& records) {
+void loadFile(vector<Record>& records) {
     string fileName;
     string buff;
     stringstream ss;
@@ -31,9 +32,9 @@ void loadFile(MyHashTable& records) {
     }
     while (recordsFile.is_open() && !recordsFile.eof()) {
         getline(recordsFile, buff);
-        Record newRecord(buff, ip);
-        records.put(ip, newRecord);
-
+        Record newRecord(buff);
+        records.push_back(newRecord);
+        records.sort();
     }
     recordsFile.close();
     records.sortHash();

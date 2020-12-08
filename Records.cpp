@@ -27,3 +27,8 @@ Records::Records() {
     }
 }
 
+ostream& operator<<(std::ostream& os, const Records& obj) {
+    for (const auto& i:obj.data)
+        os << i << "/n";
+    return os;
+}
