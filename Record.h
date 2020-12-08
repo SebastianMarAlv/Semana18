@@ -16,8 +16,6 @@
 #include <fstream>
 #include <iostream>
 
-using namespace std;
-
 struct Record {
     //Atributes:
     std::string id;
@@ -34,6 +32,6 @@ struct Record {
 };
 
 // Operator overloads:
-ostream& operator<<(std::ostream& os, const Record& obj);
+std::ostream& operator<<(std::ostream& os, const Record& obj);
 
 #endif //ACT5_2_RECORD_H

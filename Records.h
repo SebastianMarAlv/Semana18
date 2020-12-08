@@ -12,7 +12,8 @@ class Records {
         std::vector<Record> data;
     public:
         Records();
-    friend ostream& operator<<(std::ostream& os, const Records& obj);
+        void get_by_year();
+    friend std::ostream& operator<<(std::ostream& os, const Records& obj);
 };
 
 #endif //ACT5_2_RECORDS_H

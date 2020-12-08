@@ -28,7 +28,7 @@ Record::Record(const std::string& info) {
     this->price = stoi(buff);
 }
 
-ostream& operator<<(std::ostream& os, const Record& obj) {
+std::ostream& operator<<(std::ostream& os, const Record& obj) {
     os << obj.id << ",";
     os << obj.year << ",";
     os << obj.brand << ",";
