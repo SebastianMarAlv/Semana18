@@ -5,7 +5,6 @@
 // 08/12/2020.
 
 #include "Records.h"
-#include <algorithm>
 
 Records::Records() {
     std::string fileName;
@@ -37,13 +36,65 @@ std::ostream& operator<<(std::ostream& os, const Records& obj) {
 void Records::get_by_year() {
     int rangeInit;
     int rangeFinal;
-    std::cout << "Introduzca el rango de años a buscar: " << std::endl << "Entre el año: " << std::endl;
+    std::cout << "Introduzca el rango de anios a buscar: " << std::endl << "Busqueda entre el anio: " << std::endl;
     std::cin >> rangeInit;
-    std::cout << "...y el año: " << std::endl;
+    std::cout << "...y el anio: " << std::endl;
     std::cin >> rangeFinal;
+    bool found = false;
     for (const auto& i: this->data) {
-        if (rangeInit <= i.year && i.year <= rangeFinal)
+        if (rangeInit <= i.year && i.year <= rangeFinal) {
             std::cout << i << std::endl;
+            found = true;
+        }
     }
+    if (!found)
+        std::cout << "No se encontro ningun resultado en el rango solicitado" << std::endl;
 }
 
+void Records::get_by_brand() {
+    std::string brand;
+    std::cout << "Introduzca marca a buscar: " << std::endl;
+    std::cin >> brand;
+    bool found = false;
+    for (const auto& i: this->data) {
+        if (brand == i.brand) {
+            std::cout << i << std::endl;
+            found = true;
+        }
+    }
+    if (!found)
+        std::cout << "No se encontro ningun resultado con la marca solicitada" << std::endl;
+}
+
+void Records::get_by_media() {
+    std::string media;
+    std::cout << "Introduzca media a buscar: " << std::endl;
+    std::cin >> media;
+    bool found = false;
+    for (const auto& i: this->data) {
+        if (media == i.media) {
+            std::cout << i << std::endl;
+            found = true;
+        }
+    }
+    if (!found)
+        std::cout << "No se encontro ningun resultado con la marca solicitada" << std::endl;
+}
+
+void Records::get_by_price() {
+    int rangeInit;
+    int rangeFinal;
+    std::cout << "Introduzca el rango de precio a buscar: " << std::endl << "Busqueda entre el precio: " << std::endl;
+    std::cin >> rangeInit;
+    std::cout << "...y el precio: " << std::endl;
+    std::cin >> rangeFinal;
+    bool found = false;
+    for (const auto& i: this->data) {
+        if (rangeInit <= i.price && i.price <= rangeFinal) {
+            std::cout << i << std::endl;
+            found = true;
+        }
+    }
+    if (!found)
+        std::cout << "No se encontro ningun resultado en el rango solicitado" << std::endl;
+}

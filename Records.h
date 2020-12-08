@@ -13,6 +13,10 @@ class Records {
     public:
         Records();
         void get_by_year();
+        void get_by_brand();
+        void get_by_media();
+        void get_by_price();
+
     friend std::ostream& operator<<(std::ostream& os, const Records& obj);
 };
 

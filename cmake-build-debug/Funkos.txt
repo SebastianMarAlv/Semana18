@@ -1,0 +1,20 @@
+DCM108945,2018,Marvel,Avengers,IronMan,Pelicula,600
+FLL982039,2015,Disney,Frozen,Elsa,Pelicula,700
+VGT827482,2020,Playstation,GodOfWar,Kratos,Videojuego,750
+DJK274827,2020,Xbox,Halo,MasterChief,Videojuego,800
+SJE228392,2018,Nintendo,Bayonetta,Bayonetta,Videojuego,600
+DJE283928,2010,Playstation,FinalFantasy,Sephiroth Videojuego,600
+JEK291830,2014,Nickelodeon,Avatar,Momo,Serie,750
+JEK283739,2016,CartoonNetwork,Dexter'sLab,Deedee,Serie,600
+JRU183274,2017,DC,Batman,Joker,Comics,450
+FJE203947,2017,Illumination, DespicableMe, Gru Pelicula,600
+SJE271848,2018,Dreamworks,Shrek,Donkey,Pelicula,550
+AJD739847,2010,Capcom,StreetFigthers,ChunLi,Videojuego,600
+NCU987328,2011,Pixar,ToyStory,Woody,Pelicula,600
+DJE890293,2012,Netflix,StrangerThings,DemoGorgon,Serie,600
+AJE324423,2013,Nintendo,PunchOut,LittleMac,Videojuego,600
+MRI840475,2014,Atari,SpaceInvaders,Invader,Videojuego,900
+KFI284674,2010,Disney,Aladdin,Abu,Pelicula,650
+JRI287374,2012,Shonen,DragonBall,Cell,Anime,500
+KEI927484,2014,Mappa,ShingekiNoKyojin,Mikasa,Anime,700
+IEI283830,2017,Bandai,GundamWing,WingZero,Anime,800
